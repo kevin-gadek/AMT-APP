@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>
+            Details
+        </title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta name="msapplication-tap-highlight" content="no">
+        <link href="files/resources/lib/theme/jqm/jqm.css" rel="stylesheet" />
+        <link href="files/resources/lib/theme/flat-ui/flat-ui.css" rel="stylesheet" />
+        <link href="files/resources/lib/jquerymobile/1.4.4/jquery.mobile.structure-1.4.4.css"
+        rel="stylesheet" />
+        <script type="text/javascript" src="files/resources/lib/underscore/underscore.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/store/json2.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquery/jquery-2.1.1.js">
+        </script>
+        <script type="text/javascript">
+                    $(document).bind("mobileinit", function()
+            {
+                if (navigator.userAgent.toLowerCase().indexOf("android") != -1)
+                {
+                    $.mobile.defaultPageTransition = 'none';
+                    $.mobile.defaultDialogTransition = 'none';
+                }
+                else if (navigator.userAgent.toLowerCase().indexOf("msie") != -1)
+                {
+                    $.mobile.allowCrossDomainPages = true;
+                    $.support.cors = true;
+                }
+            });
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquerymobile/1.4.4/jquery.mobile-1.4.4.js">
+        </script>
+        <script type="text/javascript" src="files/resources/js/mobilebase.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/event/customEventHandler.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/sha1.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/oauth.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/contexts.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/jquery.xml2json.min.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/appery.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/component-manager.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/mapping-impl.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/entity-api.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/storage-api.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/get_target_platform.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/cordova.js">
+        </script>
+        <link href="files/resources/css/mobilebase.css" rel="stylesheet" type="text/css"
+        />
+        <script type="text/javascript" src="files/views/assets/js/services/model.js">
+        </script>
+        <script type="text/javascript" src="files/views/assets/js/SampleImageScript.js">
+        </script>
+        <script type="text/javascript" src="files/views/assets/js/FileUpload.js">
+        </script>
+        <script type="text/javascript" src="files/views/assets/js/services/service.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/databaseUtils.js">
+        </script>
+    </head>
+    
+    <body>
+        <script language="JavaScript" type="text/javascript">
+                
+        </script>
+        <div data-role="page" style="min-height:480px;" dsid="Details" id="Details" class="type-interior"
+        data-theme="b">
+            <!-- mobileheader -->
+            <div data-role="header" data-position="fixed" data-add-back-btn="true" data-back-btn-text="Back"
+            data-theme="f" name="mobileheader" id="Details_mobileheader" class="Details_mobileheader">
+                <h1 dsid="mobileheader">
+                    Item Details
+                </h1>
+            </div>
+            <!-- mobilecontainer -->
+            <div data-role="content" id="Details_mobilecontainer" name="mobilecontainer" class="Details_mobilecontainer ui-content"
+            dsid="mobilecontainer" data-theme="b">
+                <link href="Details.css" rel="stylesheet" type="text/css" />
+                <script type="text/javascript" src="Details.js">
+                </script>
+                <!-- mobileimage_32 -->
+                <img class="Details_mobileimage_32" src="files/resources/image/no-image.jpg" id="Details_mobileimage_32"
+                dsid="mobileimage_32" name="mobileimage_32" />
+                <!-- mobilelabel_2 -->
+                <div name="mobilelabel_2" id="Details_mobilelabel_2" dsid="mobilelabel_2" data-role="appery_label"
+                class="Details_mobilelabel_2">
+                    Item name:
+                </div>
+                <!-- details_name -->
+                <div name="details_name" id="Details_details_name" dsid="details_name" data-role="appery_label"
+                class="Details_details_name">
+                    Label
+                </div>
+                <!-- mobilelabel_4 -->
+                <div name="mobilelabel_4" id="Details_mobilelabel_4" dsid="mobilelabel_4" data-role="appery_label"
+                class="Details_mobilelabel_4">
+                    Current Location:
+                </div>
+                <!-- details_location -->
+                <div name="details_location" id="Details_details_location" dsid="details_location"
+                data-role="appery_label" class="Details_details_location">
+                    Label
+                </div>
+                <!-- mobilelabel_6 -->
+                <div name="mobilelabel_6" id="Details_mobilelabel_6" dsid="mobilelabel_6" data-role="appery_label"
+                class="Details_mobilelabel_6">
+                    Date Bought:
+                </div>
+                <!-- details_date -->
+                <div name="details_date" id="Details_details_date" dsid="details_date" data-role="appery_label"
+                class="Details_details_date">
+                    Label
+                </div>
+                <!-- mobilelabel_9 -->
+                <div name="mobilelabel_9" id="Details_mobilelabel_9" dsid="mobilelabel_9" data-role="appery_label"
+                class="Details_mobilelabel_9">
+                    Notes:
+                </div>
+                <!-- details_notes -->
+                <div name="details_notes" id="Details_details_notes" dsid="details_notes" data-role="appery_label"
+                class="Details_details_notes">
+                    Label
+                </div>
+                <!-- mobilelabel_11 -->
+                <div name="mobilelabel_11" id="Details_mobilelabel_11" dsid="mobilelabel_11" data-role="appery_label"
+                class="Details_mobilelabel_11">
+                    Category:
+                </div>
+                <!-- details_category -->
+                <div name="details_category" id="Details_details_category" dsid="details_category"
+                data-role="appery_label" class="Details_details_category">
+                    Label
+                </div>
+                <!-- confirm_deletion_text -->
+                <div name="confirm_deletion_text" id="Details_confirm_deletion_text" dsid="confirm_deletion_text"
+                data-role="appery_label" class="Details_confirm_deletion_text">
+                    Are you sure?
+                </div>
+                <!-- confirm_deletion_button --><!--
+                --><a data-role="button" name="confirm_deletion_button" dsid="confirm_deletion_button"
+                class="Details_confirm_deletion_button" id="Details_confirm_deletion_button" data-corners="true"
+                data-icon="none" data-iconpos='nowhere' x-apple-data-detectors="false" data-inline="true"
+                data-mini="false" data-theme="d" tabindex="11">
+                Confirm Deletion
+                </a><!--
+                --><!-- details_delete_button --><!--
+                --><a data-role="button" name="details_delete_button" dsid="details_delete_button"
+                class="Details_details_delete_button" id="Details_details_delete_button" data-corners="true"
+                data-icon="none" data-iconpos='nowhere' x-apple-data-detectors="false" data-inline="true"
+                data-mini="false" data-theme="f" tabindex="1">
+                Delete Item
+                </a>
+            </div>
+            <!-- mobilefooter -->
+            <div data-role="footer" data-position="fixed" class="Details_mobilefooter" name="mobilefooter"
+            dsid="mobilefooter" id="Details_mobilefooter" data-theme="f">
+            </div>
+        </div>
+    </body>
+
+</html>

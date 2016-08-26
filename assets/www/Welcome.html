@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>
+            Welcome
+        </title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta name="msapplication-tap-highlight" content="no">
+        <link href="files/resources/lib/theme/jqm/jqm.css" rel="stylesheet" />
+        <link href="files/resources/lib/theme/flat-ui/flat-ui.css" rel="stylesheet" />
+        <link href="files/resources/lib/jquerymobile/1.4.4/jquery.mobile.structure-1.4.4.css"
+        rel="stylesheet" />
+        <script type="text/javascript" src="files/resources/lib/underscore/underscore.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/store/json2.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquery/jquery-2.1.1.js">
+        </script>
+        <script type="text/javascript">
+                    $(document).bind("mobileinit", function()
+            {
+                if (navigator.userAgent.toLowerCase().indexOf("android") != -1)
+                {
+                    $.mobile.defaultPageTransition = 'none';
+                    $.mobile.defaultDialogTransition = 'none';
+                }
+                else if (navigator.userAgent.toLowerCase().indexOf("msie") != -1)
+                {
+                    $.mobile.allowCrossDomainPages = true;
+                    $.support.cors = true;
+                }
+            });
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquerymobile/1.4.4/jquery.mobile-1.4.4.js">
+        </script>
+        <script type="text/javascript" src="files/resources/js/mobilebase.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/event/customEventHandler.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/sha1.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/oauth.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/contexts.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/jquery.xml2json.min.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/appery.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/component-manager.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/mapping-impl.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/entity-api.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/storage-api.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/get_target_platform.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/cordova.js">
+        </script>
+        <link href="files/resources/css/mobilebase.css" rel="stylesheet" type="text/css"
+        />
+        <script type="text/javascript" src="files/views/assets/js/services/model.js">
+        </script>
+        <script type="text/javascript" src="files/views/assets/js/SampleImageScript.js">
+        </script>
+        <script type="text/javascript" src="files/views/assets/js/FileUpload.js">
+        </script>
+        <script type="text/javascript" src="files/views/assets/js/services/service.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/databaseUtils.js">
+        </script>
+    </head>
+    
+    <body>
+        <script language="JavaScript" type="text/javascript">
+                
+        </script>
+        <div data-role="page" style="min-height:480px;" dsid="Welcome" id="Welcome" class="type-interior"
+        data-theme="f">
+            <!-- mobileheader -->
+            <div data-role="header" data-position="fixed" data-add-back-btn="false" data-back-btn-text="Back"
+            data-theme="f" name="mobileheader" id="Welcome_mobileheader" class="Welcome_mobileheader">
+                <h1 dsid="mobileheader">
+                    Home
+                </h1>
+                <!-- mobilebutton_36 --><!--
+                --><a data-role="button" name="mobilebutton_36" dsid="mobilebutton_36" class="Welcome_mobilebutton_36 ui-btn-left"
+                style='min-height:16px; ' id="Welcome_mobilebutton_36" data-corners="false" data-icon="bars"
+                data-iconpos="left" x-apple-data-detectors="false" data-inline='true' data-mini='true'
+                data-theme="f" tabindex="7">
+                &nbsp;
+                </a>
+            </div>
+            <!-- mobilecontainer -->
+            <div data-role="content" id="Welcome_mobilecontainer" name="mobilecontainer" class="Welcome_mobilecontainer ui-content"
+            dsid="mobilecontainer" data-theme="f">
+                <link href="Welcome.css" rel="stylesheet" type="text/css" />
+                <script type="text/javascript" src="Welcome.js">
+                </script>
+                <!-- collapsibleset -->
+                <div data-role="collapsible-set" data-theme="f" data-content-theme=f data-collapsed-icon='plus'
+                data-expanded-icon='minus' name="collapsibleset" id="Welcome_collapsibleset" dsid="collapsibleset"
+                class="Welcome_collapsibleset">
+                    <!-- additem_block -->
+                    <div data-role="collapsible" id="Welcome_additem_block" name="additem_block" dsid="additem_block"
+                    data-collapsed="true" data-theme="f" data-content-theme="f" data-iconpos='left' class="Welcome_additem_block"
+                    reRender='collapsibleset'>
+                        <h3 id="Welcome_addItemButton" name="addItemButton" dsid="addItemButton">
+                            Add Item
+                        </h3>
+                        <!-- additem_itemname -->
+                        <div data-role="fieldcontain" class="Welcome_additem_itemname ">
+                            <input type="text" name="additem_itemname" dsid="additem_itemname" value="" placeholder="Item name "
+                            id="Welcome_additem_itemname" tabindex="12" multiple data-theme="f" class="Welcome_additem_itemname"
+                            />
+                        </div>
+                        <!-- additem_datebought -->
+                        <div data-role="fieldcontain" class="Welcome_additem_datebought ">
+                            <input type="text" name="additem_datebought" dsid="additem_datebought" value=""
+                            placeholder="Date bought" id="Welcome_additem_datebought" tabindex="13" multiple
+                            data-theme="f" class="Welcome_additem_datebought" />
+                        </div>
+                        <!-- additem_currentlocation -->
+                        <div data-role="fieldcontain" class="Welcome_additem_currentlocation ">
+                            <input type="text" name="additem_currentlocation" dsid="additem_currentlocation"
+                            value="" placeholder="Current location" id="Welcome_additem_currentlocation" tabindex="15"
+                            multiple data-theme="f" class="Welcome_additem_currentlocation" />
+                        </div>
+                        <!-- additem_notes -->
+                        <div data-role="fieldcontain" class="Welcome_additem_notes ">
+                            <input type="text" name="additem_notes" dsid="additem_notes" value="" placeholder="Notes"
+                            id="Welcome_additem_notes" tabindex="21" multiple data-theme="f" class="Welcome_additem_notes"
+                            />
+                        </div>
+                        <!-- file_input -->
+                        <div data-role="fieldcontain" class="Welcome_file_input ">
+                            <input type="file" name="file_input" dsid="file_input" value="Input" placeholder=""
+                            id="Welcome_file_input" tabindex="27" multiple data-theme="f" data-mini="true" class="Welcome_file_input"
+                            />
+                        </div>
+                        <!-- additem_categoryselectmenu -->
+                        <div data-role="fieldcontain" class="Welcome_additem_categoryselectmenu ">
+                            <select name="additem_categoryselectmenu" id="Welcome_additem_categoryselectmenu"
+                            dsid="additem_categoryselectmenu" data-theme="f" data-role="appery_selectmenu" data-inline="false"
+                            data-mini="false" data-icon="arrow-d" data-iconpos="right" data-native-menu="false"
+                            tabindex="36" appery-class="Welcome_additem_categoryselectmenu">
+                                <option id="Welcome_additem_categoryselectmenu-0" value="Home" reRender="additem_categoryselectmenu"
+                                dsid="additem_categoryselectmenu-0" selected="selected">
+                                    Home
+                                </option>
+                                <option id="Welcome_additem_categoryselectmenu-1" value="Office" reRender="additem_categoryselectmenu"
+                                dsid="additem_categoryselectmenu-1">
+                                    Office
+                                </option>
+                                <option id="Welcome_additem_categoryselectmenu-2" value="Kitchen" reRender="additem_categoryselectmenu"
+                                dsid="additem_categoryselectmenu-2">
+                                    Kitchen
+                                </option>
+                                <option id="Welcome_additem_categoryselectmenu-3" value="Cleaning" reRender="additem_categoryselectmenu"
+                                dsid="additem_categoryselectmenu-3">
+                                    Cleaning
+                                </option>
+                                <option id="Welcome_additem_categoryselectmenu-4" value="Garage" reRender="additem_categoryselectmenu"
+                                dsid="additem_categoryselectmenu-4">
+                                    Garage
+                                </option>
+                                <option id="Welcome_additem_categoryselectmenu-5" value="School" reRender="additem_categoryselectmenu"
+                                dsid="additem_categoryselectmenu-5">
+                                    School
+                                </option>
+                                <option id="Welcome_additem_categoryselectmenu-6" value="Electronics" reRender="additem_categoryselectmenu"
+                                dsid="additem_categoryselectmenu-6">
+                                    Electronics
+                                </option>
+                            </select>
+                        </div>
+                        <!-- additem_button --><!--
+                        --><a data-role="button" name="additem_button" dsid="additem_button" class="Welcome_additem_button"
+                        id="Welcome_additem_button" data-corners="true" data-icon="none" data-iconpos='nowhere'
+                        x-apple-data-detectors="false" data-mini="false" data-theme="f" tabindex="14">
+                        Add
+                        </a>
+                    </div>
+                </div>
+                <!-- list_by_category_block -->
+                <div data-role="collapsible" id="Welcome_list_by_category_block" name="list_by_category_block"
+                dsid="list_by_category_block" data-collapsed="true" data-theme="f" data-content-theme="f"
+                data-iconpos='left' class="Welcome_list_by_category_block">
+                    <h3 id="Welcome_list_by_category_header" name="list_by_category_header" dsid="list_by_category_header">
+                        List by Category
+                    </h3>
+                    <!-- list_by_category_select_menu -->
+                    <div data-role="fieldcontain" class="Welcome_list_by_category_select_menu ">
+                        <select name="list_by_category_select_menu" id="Welcome_list_by_category_select_menu"
+                        dsid="list_by_category_select_menu" data-theme="f" data-role="appery_selectmenu"
+                        data-inline="false" data-mini="false" data-icon="arrow-d" data-iconpos="right" data-native-menu="false"
+                        tabindex="37" appery-class="Welcome_list_by_category_select_menu">
+                            <option id="Welcome_list_by_category_select_menu-0" value="Home" reRender="list_by_category_select_menu"
+                            dsid="list_by_category_select_menu-0" selected="selected">
+                                Home
+                            </option>
+                            <option id="Welcome_list_by_category_select_menu-1" value="Office" reRender="list_by_category_select_menu"
+                            dsid="list_by_category_select_menu-1">
+                                Office
+                            </option>
+                            <option id="Welcome_list_by_category_select_menu-2" value="Kitchen" reRender="list_by_category_select_menu"
+                            dsid="list_by_category_select_menu-2">
+                                Kitchen
+                            </option>
+                            <option id="Welcome_list_by_category_select_menu-3" value="Cleaning" reRender="list_by_category_select_menu"
+                            dsid="list_by_category_select_menu-3">
+                                Cleaning
+                            </option>
+                            <option id="Welcome_list_by_category_select_menu-4" value="Garage" reRender="list_by_category_select_menu"
+                            dsid="list_by_category_select_menu-4">
+                                Garage
+                            </option>
+                            <option id="Welcome_list_by_category_select_menu-5" value="School" reRender="list_by_category_select_menu"
+                            dsid="list_by_category_select_menu-5">
+                                School
+                            </option>
+                            <option id="Welcome_list_by_category_select_menu-6" value="Electronics" reRender="list_by_category_select_menu"
+                            dsid="list_by_category_select_menu-6">
+                                Electronics
+                            </option>
+                        </select>
+                    </div>
+                    <!-- list_by_category_button --><!--
+                    --><a data-role="button" name="list_by_category_button" dsid="list_by_category_button"
+                    class="Welcome_list_by_category_button" id="Welcome_list_by_category_button" data-corners="true"
+                    data-icon="search" data-iconpos="right" x-apple-data-detectors="false" data-mini="false"
+                    data-theme="f" tabindex="38">
+                    List
+                    </a><!--
+                    --><!-- list_by_category_buttonlist -->
+                    <ul data-role="listview" id="Welcome_list_by_category_buttonlist" class="Welcome_list_by_category_buttonlist"
+                    name="list_by_category_buttonlist" dsid="list_by_category_buttonlist" data-inset="true"
+                    data-theme="f" data-divider-theme="b" data-count-theme="b" style="" data-split-icon="carat-r">
+                        <!-- list_by_category_list_button -->
+                        <li class="Welcome_list_by_category_list_button" data-icon="carat-r">
+                            <a id="Welcome_list_by_category_list_button" name="list_by_category_list_button"
+                            dsid="list_by_category_list_button" tabindex="48" class="Welcome_list_by_category_list_button">
+                            <h3>Item 1</h3>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- add_category_block -->
+                <div data-role="collapsible" id="Welcome_add_category_block" name="add_category_block"
+                dsid="add_category_block" data-collapsed="true" data-theme="f" data-content-theme="f"
+                data-iconpos='left' class="Welcome_add_category_block">
+                    <h3 id="Welcome_mobilecollapsblockheader_98" name="mobilecollapsblockheader_98"
+                    dsid="mobilecollapsblockheader_98">
+                        Add a Category
+                    </h3>
+                    <!-- addcategory_input -->
+                    <div data-role="fieldcontain" class="Welcome_addcategory_input ">
+                        <input type="text" name="addcategory_input" dsid="addcategory_input" value="" placeholder="Category name"
+                        id="Welcome_addcategory_input" tabindex="34" multiple data-theme="f" class="Welcome_addcategory_input"
+                        />
+                    </div>
+                    <!-- addcategorybutton --><!--
+                    --><a data-role="button" name="addcategorybutton" dsid="addcategorybutton" class="Welcome_addcategorybutton"
+                    id="Welcome_addcategorybutton" data-corners="true" data-icon="none" data-iconpos='nowhere'
+                    x-apple-data-detectors="false" data-mini="false" data-theme="f" tabindex="35">
+                    Add
+                    </a>
+                </div>
+            </div>
+            <!-- mobilefooter -->
+            <div data-role="footer" data-position="fixed" class="Welcome_mobilefooter" name="mobilefooter"
+            dsid="mobilefooter" id="Welcome_mobilefooter" data-theme="f">
+                <!-- export_inv_button -->
+                <div data-role="navbar" id="Welcome_export_inv_button" name="export_inv_button"
+                dsid="export_inv_button" class="Welcome_export_inv_button" data-theme="f" style="position: relative;">
+                    <ul>
+                        <!-- navbar_exportinv_button -->
+                        <li>
+                            <a data-theme="f" data-icon="action" id="Welcome_navbar_exportinv_button" dsid="navbar_exportinv_button"
+                            name="navbar_exportinv_button">
+                            Export Inventory
+                            </a>
+                        </li>
+                        <!-- navbar_trash_button -->
+                        <li>
+                            <a data-theme="f" data-icon="star" id="Welcome_navbar_trash_button" dsid="navbar_trash_button"
+                            name="navbar_trash_button">
+                            Trash
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- trash_panel -->
+            <div data-role="panel" tabindex="-1" data-position="left" data-display="overlay"
+            id="Welcome_trash_panel" class="Welcome_trash_panel" name="trash_panel" dsid="trash_panel"
+            data-theme="f">
+                <!-- mobilebutton_180 --><!--
+                --><a data-role="button" name="mobilebutton_180" dsid="mobilebutton_180" class="Welcome_mobilebutton_180"
+                id="Welcome_mobilebutton_180" data-corners="true" data-icon="none" data-iconpos='nowhere'
+                x-apple-data-detectors="false" data-mini="false" data-theme="f" tabindex="51">
+                Trash Bin
+                </a><!--
+                --><!-- delete_history_list -->
+                <ul data-role="listview" id="Welcome_delete_history_list" class="Welcome_delete_history_list"
+                name="delete_history_list" dsid="delete_history_list" data-inset="true" data-theme="f"
+                data-divider-theme="b" data-count-theme="b" style="" data-split-icon="carat-r">
+                    <!-- delete_history_item -->
+                    <li class="Welcome_delete_history_item" data-icon="star">
+                        <a id="Welcome_delete_history_item" name="delete_history_item" dsid="delete_history_item"
+                        tabindex="50" class="Welcome_delete_history_item">
+                        <h3>Item 1</h3>
+                        </a><!--
+                        --><!-- delete_history_item_button --><!--
+                        --><a id="Welcome_delete_history_item_button" data-theme="f" name="delete_history_item_button"
+                        dsid="delete_history_item_button" class="Welcome_delete_history_item_button" tabindex="-1">
+                        </a>
+                    </li>
+                </ul>
+                <!-- restore_item_confirmation -->
+                <div name="restore_item_confirmation" id="Welcome_restore_item_confirmation" dsid="restore_item_confirmation"
+                data-role="appery_label" class="Welcome_restore_item_confirmation">
+                    Your item has been successfully restored!
+                </div>
+            </div>
+            <!-- about_us_panel -->
+            <div data-role="panel" tabindex="-1" data-position="left" data-display="overlay"
+            id="Welcome_about_us_panel" class="Welcome_about_us_panel" name="about_us_panel"
+            dsid="about_us_panel" data-theme="f">
+                <!-- mobilebutton_170 --><!--
+                --><a data-role="button" name="mobilebutton_170" dsid="mobilebutton_170" class="Welcome_mobilebutton_170"
+                id="Welcome_mobilebutton_170" data-corners="true" data-icon="none" data-iconpos='nowhere'
+                x-apple-data-detectors="false" data-mini="false" data-theme="f" tabindex="49">
+                About Us
+                </a><!--
+                --><!-- mobilelabel_172 -->
+                <div name="mobilelabel_172" id="Welcome_mobilelabel_172" dsid="mobilelabel_172"
+                data-role="appery_label" class="Welcome_mobilelabel_172">
+                    This inventory management application was developed by Kevin Gadek, Matthew Boyd,
+                    Jack Dubil and Ross Wilkinson.
+                </div>
+            </div>
+            <!-- options_panel -->
+            <div data-role="popup" name="options_panel" dsid="options_panel" id="Welcome_options_panel"
+            class="Welcome_options_panel" data-corners="true" data-dismissible="true" data-overlay-theme=""
+            data-theme="" data-shadow="true" data-tolerance="30,15,30,15">
+                <div class="ui-popup-content-wrapper">
+                    <!-- about_us_button --><!--
+                    --><a data-role="button" name="about_us_button" dsid="about_us_button" class="Welcome_about_us_button"
+                    id="Welcome_about_us_button" data-corners="false" data-icon="none" data-iconpos='nowhere'
+                    x-apple-data-detectors="false" data-mini="false" data-theme="f" tabindex="53">
+                    About Us
+                    </a><!--
+                    --><!-- log_out_button --><!--
+                    --><a data-role="button" name="log_out_button" dsid="log_out_button" class="Welcome_log_out_button"
+                    id="Welcome_log_out_button" data-corners="true" data-icon="none" data-iconpos='nowhere'
+                    x-apple-data-detectors="false" data-mini="false" data-theme="f" tabindex="52">
+                    Log Out
+                    </a>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

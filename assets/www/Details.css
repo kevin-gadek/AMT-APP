@@ -1,0 +1,111 @@
+
+/* Define default spinner */
+.ui-icon-loading {
+	background: url("files/resources/lib/jquerymobile/1.4.4/images/ajax-loader.gif") repeat scroll 0 0 / 46px 46px transparent!important;
+}
+/* mobilecontainer */
+.ui-content.Details_mobilecontainer {
+	padding: 15px 15px 15px 15px;
+}
+/* mobileimage_32 */
+.Details_mobileimage_32 {
+	margin: 4px 0px 4px 0px;
+	width: 270px; height: 270px;
+	display: block;
+}
+/* mobilelabel_2 */
+.Details_mobilelabel_2 {
+	text-decoration: none; font-weight: bold; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* details_name */
+.Details_details_name {
+	text-decoration: none; font-weight: normal; font-style: italic; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilelabel_4 */
+.Details_mobilelabel_4 {
+	text-decoration: none; font-weight: bold; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* details_location */
+.Details_details_location {
+	text-decoration: none; font-weight: normal; font-style: italic; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilelabel_6 */
+.Details_mobilelabel_6 {
+	text-decoration: none; font-weight: bold; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* details_date */
+.Details_details_date {
+	text-decoration: none; font-weight: normal; font-style: italic; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilelabel_9 */
+.Details_mobilelabel_9 {
+	text-decoration: none; font-weight: bold; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* details_notes */
+.Details_details_notes {
+	text-decoration: none; font-weight: normal; font-style: italic; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilelabel_11 */
+.Details_mobilelabel_11 {
+	text-decoration: none; font-weight: bold; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* details_category */
+.Details_details_category {
+	text-decoration: none; font-weight: normal; font-style: italic; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* confirm_deletion_text */
+.Details_confirm_deletion_text {
+	text-decoration: none; font-weight: normal; font-style: italic; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	display: none;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* confirm_deletion_button */
+#Details_confirm_deletion_button {
+	display: none;
+}
+.ui-btn.Details_confirm_deletion_button {
+	margin: 4px 5px 4px 5px;
+}
+/* details_delete_button */
+#Details_details_delete_button {
+
+}
+.ui-btn.Details_details_delete_button {
+	margin: 4px 5px 4px 5px;
+}
+/* mobilefooter */
+.Details_mobilefooter {
+	min-height:38px;
+}
